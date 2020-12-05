@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#d2d2d2;
+}
+a{
+    color: #545454;
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+/*Estilos de navegación*/
+.nav-main{
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.class-logo{
+    width: 200px;
+}
+.class-avatar{
+    display: flex;
+    width: 55px;    
+    border-radius: 50%;
+}
+.user{
+    padding-right: 5px;
+}
+.nav-main ul{
+    display: flex;
+    list-style: none;
+}
+.nav-main ul.user{
+    margin-right:7px;
+}
+.nav-main ul.menu li{
+    padding: 35px;
+}
+.nav-main ul.menu{
+    flex: 1;
+    margin-left: 20px;
+}
