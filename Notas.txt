@@ -1,0 +1,33 @@
+*Registro de usuario
+-Usuario e imagen
+-Correo electronico
+-Nombre de usuario
+-Contraseña
+-Redes sociales
+-Imagen tipo avatar
+*Pantalla principal
+-Usuario e imagen
+-Noticias destacadas o nuevas (Debe incluir imagen, descripcion y fecha de publicación)
+-Barra de búsqueda
+-Barra de navegación
+*Pantalla de iniciar sesión
+-Usuario e imagen
+-Nombre de usuario o correo
+-Contraseña
+*Pantalla de noticia
+-Usuario e imagen
+-valoración
+-Comentarios (valoracion)
+*Pantalla para administrar
+-Usuario e imagen
+-Ver comentarios de noticias (borrar o amonestar), (suspender)
+-Generar noticia
+-Rechazar noticia o aprovar (colocar comentario)
+*Perfil de usuario
+-Usuario e imagen
+-Ver datos, editarlos
+-Agregar breve descripción
+-Noticias marcadas
+-Alertas
+
+- - - - -
