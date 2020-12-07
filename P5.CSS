@@ -52,3 +52,25 @@ a{
     flex: 1;
     margin-left: 20px;
 }
+
+.files{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.img-vid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia-img{
+    margin-right: 5px;
+    margin-top:5px;
+    width: 550px;
+}
+.video-not{
+    margin-left: 5px;
+    margin-top:5px;
+    width: 550px;
+}
