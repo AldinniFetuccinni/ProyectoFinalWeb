@@ -49,3 +49,39 @@ a{
     flex: 1;
     margin-left: 20px;
 }
+
+/*CUERPO DEL PERFIL*/
+.img-profile{
+    width: 300px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.p-desc{
+    margin-top: 50px;
+    display: flex;
+}
+
+.p-desc div h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 60px;
+}
+.p-desc div p{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+}
+/*Favoritas*/
+.favo{
+    margin-left: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+.favo ul{
+    display: flex;
+    list-style: none;
+}
+.favo ul li{
+    padding: 75px;
+}
