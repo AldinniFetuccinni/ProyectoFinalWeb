@@ -49,3 +49,81 @@ a{
     flex: 1;
     margin-left: 20px;
 }
+/*CUERPO DE LA NOTICIA*/
+.titulo{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.noticia{
+    display: flex;
+}
+
+.noticia-img{
+    margin-left: 20px;
+    margin-top:5px;
+    width: 750px;
+}
+.contenido{
+    padding-left: 30px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+}
+.nota{
+    margin-top: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding-left: 20px;
+    font-size:20px;
+}
+
+/*COMENTARIOS*/
+.comments{
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-comment{
+    width: 70px;
+    border-radius: 50%;
+}
+.comments div.user-avatar h3{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*VALORACION*/
+.valoracion{
+    padding-right: 1130px;
+    color:grey;
+}
+#form label {
+    font-size: 40px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
