@@ -16,6 +16,9 @@ a{
     margin: auto;
 }
 /*Estilos de navegación*/
+.input-group{
+    width: 200px;
+}
 .nav-main{
     font-size: 25px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -72,16 +75,39 @@ a{
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 20px;
 }
-/*Favoritas*/
-.favo{
-    margin-left: 50px;
-    display:flex;
-    justify-content: space-between;
-}
-.favo ul{
+
+/*CARDS*/
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 20px 0;
+  }
+  
+  .news-cards img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .news-cards a {
+    padding: 10px 0;
+    color: #646464;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .btn{
+    background-color: grey;
+  }
+  
+  .fav-but{
+    padding-top: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     display: flex;
-    list-style: none;
-}
-.favo ul li{
-    padding: 75px;
-}
+    justify-content: space-between;
+  }

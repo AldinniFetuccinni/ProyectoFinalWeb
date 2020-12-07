@@ -16,6 +16,9 @@ a{
     margin: auto;
 }
 /*Estilos de navegación*/
+.input-group{
+    width: 200px;
+}
 .nav-main{
     font-size: 25px;
     font-family: 'Yanone Kaffeesatz', sans-serif;

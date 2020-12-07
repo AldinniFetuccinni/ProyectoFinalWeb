@@ -16,6 +16,9 @@ a{
     margin: auto;
 }
 /*Estilos de navegación*/
+.input-group{
+    width: 200px;
+}
 .nav-main{
     font-size: 25px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -55,21 +58,29 @@ a{
     font-size: 60px;
     margin-left: 20px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .noticia{
     display: flex;
+    justify-content: space-between;
 }
 
 .noticia-img{
     margin-left: 20px;
     margin-top:5px;
-    width: 750px;
+    width: 550px;
+}
+.video-not{
+    margin-left: 20px;
+    margin-top:5px;
+    width: 550px;
 }
 .contenido{
-    padding-left: 30px;
+    padding-left: 20px;
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 30px;
+    text-align: center;
 }
 .nota{
     margin-top: 20px;
@@ -80,15 +91,14 @@ a{
 
 /*COMENTARIOS*/
 .comments{
-    margin-left: 30px;
     margin-top: 50px;
-    width: 50%;
+    margin-left: 20px;
+    width: 90%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .img-comment{
-    width: 70px;
+    width: 80px;
     border-radius: 50%;
 }
 .comments div.user-avatar h3{
@@ -96,10 +106,14 @@ a{
     font-size: 20px;
     text-align: center;
 }
+.form-group{
+    width: 700px;
+    margin-right: 200px;
+}
 
 /*VALORACION*/
 .valoracion{
-    padding-right: 1130px;
+    padding-left: 20px;
     color:grey;
 }
 #form label {
@@ -127,3 +141,21 @@ a{
   input[type="radio"]:checked ~ label {
     color: orange;
   }
+
+  div.comm {
+      border-style: solid;
+    }
+.ava-com-t{
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.comentarios{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.comentarios p{
+    padding-left: 20px;
+    padding-right: 20px;
+}

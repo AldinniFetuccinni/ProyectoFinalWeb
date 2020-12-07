@@ -16,6 +16,9 @@ a{
     margin: auto;
 }
 /*Estilos de navegación*/
+.input-group{
+    width: 200px;
+}
 .nav-main{
     font-size: 25px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -27,7 +30,11 @@ a{
 .class-logo{
     width: 200px;
 }
-
+.class-avatar{
+    display: flex;
+    width: 55px;    
+    border-radius: 50%;
+}
 .user{
     padding-right: 5px;
 }
@@ -35,7 +42,9 @@ a{
     display: flex;
     list-style: none;
 }
-
+.nav-main ul.user{
+    margin-right:7px;
+}
 .nav-main ul.menu li{
     padding: 35px;
 }
@@ -43,3 +52,65 @@ a{
     flex: 1;
     margin-left: 20px;
 }
+
+/*CUERPO DEL PERFIL*/
+.img-profile{
+    width: 300px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.p-desc{
+    margin-top: 50px;
+    display: flex;
+}
+
+.p-desc div h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 60px;
+}
+.p-desc div p{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+}
+
+/*CARDS*/
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 20px 0;
+  }
+  
+  .news-cards img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .news-cards a {
+    padding: 10px 0;
+    color: #646464;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .btn{
+    background-color: grey;
+  }
+  
+  .fav-but{
+    padding-top: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-group{
+      width: 550px;
+  }

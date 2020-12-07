@@ -16,6 +16,9 @@ a{
     margin: auto;
 }
 /*Estilos de navegación*/
+.input-group{
+    width: 320px;
+}
 .nav-main{
     font-size: 25px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -42,4 +45,31 @@ a{
 .nav-main ul.menu{
     flex: 1;
     margin-left: 20px;
+}
+
+/*FORMS*/
+.formularios{
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.ini-ses{
+    background-color: rgb(136, 136, 136);
+    padding: 30px;
+    margin-left:150px;
+    border-radius: 10px;
+}
+.regis{
+    background-color: rgb(136, 136, 136);
+    padding: 40px;
+    margin-right: 150px;
+    border-radius: 10px;
+}
+.logo-insta{
+    width: 30px;
+}
+.logo-twitter{
+    width: 30px;
 }
