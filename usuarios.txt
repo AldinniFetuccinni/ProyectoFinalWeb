@@ -1,0 +1,33 @@
+Administrador
+admin@cheems.com
+administrador
+-
+Moderador
+mod@cheems.com
+moderador
+-
+Editor
+editor@cheems.com
+editor
+
+Amonestado
+amon@cheems.com
+amonestado
+-
+PRUEBA
+prueba@cheems.com
+prueba
+-----------------------------------
+img/adm.png
+img/amo.jpg
+
+CREATE TABLE `usuario`.`user` (
+  `email` VARCHAR(30) NOT NULL,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `avatar` VARCHAR(45) NOT NULL,
+  `adm` TINYINT NULL,
+  `mod` TINYINT NULL,
+  `edit` TINYINT NULL,
+  `amon` TINYINT NULL,
+ 

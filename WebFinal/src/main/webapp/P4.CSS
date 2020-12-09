@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#d2d2d2;
+}
+a{
+    color: #545454;
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+/*Estilos de navegación*/
+.input-group{
+    width: 200px;
+}
+.nav-main{
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.class-logo{
+    width: 200px;
+}
+.class-avatar{
+    display: flex;
+    width: 55px;    
+    border-radius: 50%;
+}
+.user{
+    padding-right: 5px;
+}
+.nav-main ul{
+    display: flex;
+    list-style: none;
+}
+.nav-main ul.user{
+    margin-right:7px;
+}
+.nav-main ul.menu li{
+    padding: 35px;
+}
+.nav-main ul.menu{
+    flex: 1;
+    margin-left: 20px;
+}
+/*CUERPO DE LA NOTICIA*/
+.titulo{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.noticia{
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia-img{
+    margin-left: 20px;
+    margin-top:5px;
+    width: 550px;
+}
+.video-not{
+    margin-left: 20px;
+    margin-top:5px;
+    width: 550px;
+}
+.contenido{
+    padding-left: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.nota{
+    margin-top: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding-left: 20px;
+    font-size:20px;
+}
+
+/*COMENTARIOS*/
+.comments{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.img-comment{
+    width: 80px;
+    border-radius: 50%;
+}
+.comments div.user-avatar h3{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.form-group{
+    width: 700px;
+    margin-right: 200px;
+}
+
+/*VALORACION*/
+.valoracion{
+    padding-left: 20px;
+    color:grey;
+}
+#form label {
+    font-size: 40px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  div.comm {
+      border-style: solid;
+    }
+.ava-com-t{
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.comentarios{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.comentarios p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
