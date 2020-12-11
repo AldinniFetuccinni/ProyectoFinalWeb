@@ -20,8 +20,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author aldom
  */
-@WebServlet(name = "SingInController", urlPatterns = {"/SingInController"})
-public class SingInController extends HttpServlet {
+@WebServlet(name = "LogInController", urlPatterns = {"/LogInController"})
+public class LogInController extends HttpServlet {
 
     /**
      * Handles the HTTP <code>POST</code> method.
@@ -35,22 +35,19 @@ public class SingInController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String Email = request.getParameter("email");
-        String UserName = request.getParameter("user");
         String Password = request.getParameter("password");
-        String Red1 = request.getParameter("red1");
-        String Red2 = request.getParameter("red2");
-        String Img = request.getParameter("img");
-        String mes = "<script>alert('Usuario registrado, ya puedes iniciar sesión con tus datos')</script>";
-        String meso = "<script>alert('El usuario que intentas registrar ya existe, intenta con otro')</script>";
-        User user = new User(Email,UserName, Password, Red1, Red2, Img);
-        if (userDao.SignInUser(user) == 1){
+        User user = new User(Email, Password);
+        User logIn = userDao.LogInUser(user);
+        String mea = "<script>alert('Datos incorrectos')</script>";
+        if(logIn != null){
             HttpSession session = request.getSession();
-            response.sendRedirect("index.jsp");
-            session.setAttribute("mes", mes);
+            session.setAttribute("UserName", logIn.getEmail());
+            session.setAttribute("Img", logIn.getPassword());
+            response.sendRedirect("P2.jsp");
         }else{
             HttpSession session = request.getSession();
             response.sendRedirect("index.jsp");
-            session.setAttribute("meso", meso);
+            session.setAttribute("meso", mea);
         }
     }
 

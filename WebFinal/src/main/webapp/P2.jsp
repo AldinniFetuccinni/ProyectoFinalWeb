@@ -22,23 +22,23 @@
         <div class = "container">
         <!--NAVEGACIÓN-->
         <nav class = "nav-main">
-            <a href="P2.HTML">
+            <a href="P2.jsp">
               <img src= "img/logo.png" alt= "logo" class ="class-logo">
             </a>
             <ul class= "menu">
                 <li>
-                    <a href ="#">Opcion 1</a>
+                    <a href="p5.jsp">Agregar Noticia</a>
                 </li>
                 <li>
-                    <a href ="#">Opcion 2</a>
+                    <a href ="#">Espectaculos</a>
                 </li>
                 <li>
-                    <a href ="#">Opcion 2</a>
+                    <a href ="#">Politica</a>
                 </li>
                 <li>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Buscar</button>
                         </div>
                         <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                     </div>
@@ -46,12 +46,12 @@
             </ul>
             <ul class="user">
                 <li>
-                    <a href="P6.HTML" class="user">Nombre Usuario</a>
+                    <a href="P6.jsp" class="user"><%=session.getAttribute("UserName")%></a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <img src="img/avatar.jpg" alt = "avatar" class="class-avatar">
+                    <img src = "<%=session.getAttribute("Img")%>" alt = "avatar" class="class-avatar"/>
                 </li>
             </ul>
         </nav>

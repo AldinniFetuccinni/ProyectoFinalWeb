@@ -17,10 +17,11 @@
     <body>
         <%=session.getAttribute("mes")%>
         <%=session.getAttribute("meso")%>
+        <%=session.getAttribute("mea")%>
         <div class = "container">
         <!--NAVEGACIÓN-->
         <nav class = "nav-main">
-            <a href="P2.HTML">
+            <a href="P2.jsp">
             <img src= "img/logo.png" alt= "logo" class ="class-logo">
             </a>
             <ul class= "menu">
@@ -45,15 +46,15 @@
         </nav>
         <!--Formularios de registro e inicio de sesión-->
         <div class ="formularios">
-            <form class="ini-ses">
+            <form action="LogInController" method="POST" class="ini-ses">
                 <h1>Iniciar sesión</h1>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Correo Electrónico</label>
-                  <input type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email"  name="email"class="form-control" id="exampleInputUser1">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Contraseña</label>
-                  <input type="password"  class="form-control" id="exampleInputPassword1">
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                 </div>
                 <button type="submit" class="btn btn-primary">Ingresar</button>
             </form>

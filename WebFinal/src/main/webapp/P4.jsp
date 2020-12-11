@@ -1,0 +1,108 @@
+<%-- 
+    Document   : P4
+    Created on : 9/12/2020, 10:38:28 AM
+    Author     : aldom
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="P4.CSS">
+    <title>Noticias Cheems</title>
+    </head>
+    <body>
+        <div class = "container">
+        <!--BARRA DE NAVEGACION-->
+        <nav class = "nav-main">
+            <a href="P2.jsp">
+                <img src= "img/logo.png" alt= "logo" class ="class-logo">
+            </a>
+            <ul class= "menu">
+                <li>
+                    <a href ="p5.jsp">Agregar Noticia</a>
+                </li>
+                <li>
+                    <a href ="#">Espectaculos</a>
+                </li>
+                <li>
+                    <a href ="#">Politica</a>
+                </li>
+                <li>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </li>
+            </ul>
+            <ul class="user">
+                <li>
+                    <a href="P6.jsp" class="user"><%=session.getAttribute("UserName")%></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="<%=session.getAttribute("Img")%>" alt = "avatar" class="class-avatar">
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <div>
+            <h1 class="titulo">Cheems rompe las leyes</h1>
+            <div class = "noticia">
+                <img src="img/noticia.jpg" alt="cheems" class="noticia-img">
+                <video class="video-not" autoplay>
+                    <source src="img/music.mp4">
+                </video>
+            </div>
+            <p class ="contenido">Fue encontrado culpable de mas de 30 crimenes de odio en contra integrantes de grupos religiosos musulmanes.</p>
+            <p class="nota">El pasado miercoles 8 de diciembre, elementos de la fuerza civil, captaron el anigmatico y famoso perro rondando por las calles de la ciudad sin seguir las medidas de sanidad y seguridad impuestas por el Doctor Manuel de la O, quien menciono que de violar dichas medidas, se tomarian cartas en el asunto. El perro, quien se identifico a sí mismo como "Cheems el meme", se limitó a mencionar que él solamente habia abandonado su domicilio para buscar un poco de alimento. Pero elementos de la policia municipal respondieron con violencia policial, lo que resulto en el fallecimiento del antes mencionado personaje. Hoy en dia, familia y amigos de Cheems buscan justicia y esperan poder ser escuchados por las autoridades.</p>
+        </div>
+        <div class="valoracion">
+<form>
+  <p class="clasificacion">
+    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1">★</label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2">★</label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3">★</label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4">★</label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5">★</label>
+  </p>
+  <button type="submit" class="btn btn-primary">Agregar a Favoritos</button>
+</form>
+        </div>
+        <div class="comments">
+            <div class="user-avatar">
+                <img src="img/avatar.jpg" alt="cheems" class="img-comment">
+                <h3>Cheems</h3>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Deja tu comentario</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <button type="submit" class="btn btn-primary">>></button>
+            </div>
+        </div>
+        <div class="comentarios">
+            <img src="img/cheemsito.jpg" alt="cheemsito" class="ava-com-t">
+            <div class="comm">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero qui officiis molestiae neque ab repellat atque sed odio minima fugit!</p>
+            <button type="button" class="btn btn-success">Útil</button>
+            <button type="button" class="btn btn-danger">Inútil</button>
+            <button type="button" class="btn btn-warning">Eliminar</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

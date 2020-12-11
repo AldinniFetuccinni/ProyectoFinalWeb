@@ -70,6 +70,28 @@ END$$
 DELIMITER ;
     */
     
+    
+    /*
+    DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `LogIn`(
+IN PEmail varchar(30),
+IN PPassword varchar(45)
+)
+BEGIN
+	select
+    u.username,
+    u.avatar
+    from user u 
+    where 
+    u.email = PEmail
+    AND u.password = PPassword;
+END$$
+DELIMITER ;
+
+
+
+    */
+    
     public static int SignInUser(User user){
     try{
         Connection con = DbConnection.getConnection();
@@ -85,6 +107,24 @@ DELIMITER ;
         System.out.println(ex.getMessage());
     }
     return 0;
+}
+    
+    public static User LogInUser(User user){
+    try{
+        Connection con = DbConnection.getConnection();
+        CallableStatement callable = con.prepareCall("call LogIn(?,?);");
+        callable.setString(1, user.getEmail());
+        callable.setString(2, user.getPassword());
+        ResultSet result = callable.executeQuery();
+        while(result.next()){
+            String UserName = result.getString(1);
+            String Img = result.getString(2);
+            return new User(UserName, Img);
+        }
+    }catch(SQLException ex){
+        System.out.println(ex.getMessage());
+    }
+    return null;
 }
     
 }

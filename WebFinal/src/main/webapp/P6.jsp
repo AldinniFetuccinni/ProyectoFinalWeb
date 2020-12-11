@@ -1,0 +1,111 @@
+<%-- 
+    Document   : P6
+    Created on : 9/12/2020, 10:38:57 AM
+    Author     : aldom
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="P6.CSS">
+    <title>Noticias Cheems</title>
+    </head>
+    <body>
+    <div class = "container">
+        <nav class = "nav-main">
+            <a href="P2.jsp">
+                <img src= "img/logo.png" alt= "logo" class ="class-logo">
+            </a>
+            <ul class= "menu">
+                <li>
+                    <a href ="P5.jsp">Agregar Noticia</a>
+                </li>
+                <li>
+                    <a href ="#">Espectaculos</a>
+                </li>
+                <li>
+                    <a href ="#">Politica</a>
+                </li>
+                <li>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </li>
+            </ul>
+            <ul class="user">
+                <li>
+                    <a href="P6.jsp" class="user"><%=session.getAttribute("UserName")%></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="<%=session.getAttribute("Img")%>" alt = "avatar" class="class-avatar">
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <div>
+            <div class="p-desc">
+                <img src="img/avatar.jpg" alt="picture" class="img-profile">
+                <div>
+                    <h1><%=session.getAttribute("UserName")%></h1>
+                    <p>Yo nada más quiero decirle a la directiva de los Tigres que tenga piedad de nosotros los aficionados. No puede ser posible, somos el hazmerreír de todo México, 4-0 por favor entiendan. Ya corran a ese técnico, ¿hasta cuándo? ¿Qué más quieren ver? ¿Qué más quieren? Nosotros los aficionados ahí en el estadio echando porras y cuanto para que ellos no hagan nada. Es infame ver cómo el equipo perdía el día de hoy, ¿hasta cuándo? ¿Hasta cuándo? Le digo a toda esa directiva de inutiles que no han podido hacer nada, por favor hombre, ya estuvo bueno.</p>
+                    <a href="P3.jsp">
+                        <button type="submit" class="btn btn-primary">Editar</button>
+                    </a>
+                </div>
+            </div>
+            <div class="fav-but">
+                <h2 class="not-fav">Noticias Favoritas</h2>
+                <a href="P3.jsp">
+                    <button type="submit" class="btn btn-primary">Editar</button>
+                </a>
+            </div>
+            <div class="news-cards">
+                <div>
+                  <img src="img/card1.jpg" alt="" />
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+                    doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+                  </p>
+                  <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <div>
+                  <img src="img/card2.jpg" alt="" />
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+                    doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+                  </p>
+                  <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <div>
+                  <img src="img/card3.jpg" alt="" />
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+                    doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+                  </p>
+                  <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <div>
+                  <img src="img/card4.jpg" alt="" />
+                  <h3>Lorem, ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
+                    doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
+                  </p>
+                  <a href="#">Leer más <i class="fas fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

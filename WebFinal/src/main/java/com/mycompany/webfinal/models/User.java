@@ -10,7 +10,10 @@ package com.mycompany.webfinal.models;
  * @author aldom
  */
 public class User {
-    
+    private int adm;
+    private int edit;
+    private int amon;
+    private int mode;
     private String UserName;
     private String password;
     private String email;
@@ -19,6 +22,64 @@ public class User {
     private String img;
 
     public User() {
+    }
+
+    public User(String email, String password) {
+        this.password = password;
+        this.email = email;
+    }
+
+    public User(int adm, int edit, int amon, int mode, String UserName) {
+        this.adm = adm;
+        this.edit = edit;
+        this.amon = amon;
+        this.mode = mode;
+        this.UserName = UserName;
+    }
+
+    public User(int adm, int edit, int amon, int mode, String UserName, String password, String email, String red1, String red2, String img) {
+        this.adm = adm;
+        this.edit = edit;
+        this.amon = amon;
+        this.mode = mode;
+        this.UserName = UserName;
+        this.password = password;
+        this.email = email;
+        this.red1 = red1;
+        this.red2 = red2;
+        this.img = img;
+    }
+
+    public int getAdm() {
+        return adm;
+    }
+
+    public void setAdm(int adm) {
+        this.adm = adm;
+    }
+
+    public int getEdit() {
+        return edit;
+    }
+
+    public void setEdit(int edit) {
+        this.edit = edit;
+    }
+
+    public int getAmon() {
+        return amon;
+    }
+
+    public void setAmon(int amon) {
+        this.amon = amon;
+    }
+
+    public int getMode() {
+        return mode;
+    }
+
+    public void setMode(int mode) {
+        this.mode = mode;
     }
 
     public User(String UserName, String password, String email, String red1, String red2, String img) {
@@ -30,9 +91,6 @@ public class User {
         this.img = img;
     }
 
-    public User(String UserName, String Password) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     public String getUserName() {
         return UserName;
